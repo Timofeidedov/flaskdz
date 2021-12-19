@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+		<style type="text/css">
+			input{width: 100%}
+			input.radio{width: 10%}
+			input.submit{width: 20%}
+			select{width: 100%}
+			table{line-height: 250%}
+			table {border-collapse: separate;border-spacing: 8px 1px}
+			ul{list-style-type: none}
+		</style>
+	</head>
+	<body>
+		<h2>Статистика</h2>
+<body>
+    <table>
+        <tr>
+            <td>Средний возраст</td>
+            <td>{{ all_info['age_mean'] }}</td>
+        </tr>
+        <tr>
+            <td>Минимальный возраст</td>
+            <td>{{ all_info['age_min'] }}</td>
+        </tr>
+        <tr>
+            <td>Максимальный возраст</td>
+            <td>{{ all_info['age_max'] }}</td>
+        </tr>
+        <br>
+        <tr>
+            <td>Средний ответ на вопрос 2 "Я готов понять человека, проявляющего слабость": </td>
+            <td>{{ content1 }}</td>
+        </tr>
+        <tr>
+            <td>Средний ответ на вопрос 3 "Я готов простить человека, проявляющего слабость": </td>
+            <td>{{ content2 }}</td>
+        </tr>
+        <tr>
+            <td>Средний ответ на вопрос 5 "Меня привлекают сильные люди": </td>
+            <td>{{ content3 }}</td>
+        </tr>
+        <tr>
+            <td>Средний ответ на вопрос 7 "Люди, у которых нет слабостей, кажутся мне странными или отталкивают меня": </td>
+            <td>{{ content4 }}</td>
+        </tr>
+    </table>
+</body>
+</html>
